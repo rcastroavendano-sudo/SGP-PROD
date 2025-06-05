@@ -1,3 +1,5 @@
+Comandos basicos
+----------------
 1. git init						: Inicializa un repositorio Git en el directorio actual.
 2. git add . 					: Agrega todos los archivos y cambios al área de preparación (staging).
 3. git commit -m "Mensaje"		:  Guarda los cambios en el historial del repositorio con un mensaje descriptivo.
@@ -8,14 +10,25 @@
 8. git status					:  Muestra el estado actual del repositorio, incluidos los cambios no confirmados.
 9. git log						:  Muestra el historial de confirmaciones (commits) del repositorio.
 
-Para sincronizar los cambios al repo SGP-PROD
----------------------------------------------
+
+Para eliminar cualquier historial de git en el directorio SGP-PROD en powershell 
+--------------------------------------------------------------------------------
+cd C:\xampp\htdocs\SGP-PROD
+Remove-Item -Recurse -Force .git
+
+
+Para sincronizar la carpeta local a un nuevo repo en GIT-HUB llamado SGP-PROD
+------------------------------------------------------------------------------
 git init
 git add .
 git commit -m "1° sincronización"
 git branch -M main
 git remote add origin https://github.com/rcastroavendano-sudo/SGP-PROD.git
 git push -u origin main
+
+
+Para sincronizar solo los archivos que fueron modificados del repo llamado SGP-PROD
+-----------------------------------------------------------------------------------
 
 
 git status                # Verifica los archivos modificados
