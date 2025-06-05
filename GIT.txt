@@ -1,0 +1,31 @@
+1. git init						: Inicializa un repositorio Git en el directorio actual.
+2. git add . 					: Agrega todos los archivos y cambios al área de preparación (staging).
+3. git commit -m "Mensaje"		:  Guarda los cambios en el historial del repositorio con un mensaje descriptivo.
+4. git remote add origin URL	:  Conecta el repositorio local con el remoto en GitHub usando su URL.
+5. git branch -M main			:  Cambia el nombre de la rama principal a `main` (opcional si ya es `main`).
+6. git push -u origin main		:  Sube los cambios locales al repositorio remoto en la rama `main`.
+7. git pull						:  Descarga y sincroniza los cambios del repositorio remoto con el local.
+8. git status					:  Muestra el estado actual del repositorio, incluidos los cambios no confirmados.
+9. git log						:  Muestra el historial de confirmaciones (commits) del repositorio.
+
+Para sincronizar los cambios al repo SGP-PROD
+---------------------------------------------
+git init
+git add .
+git commit -m "1° sincronización"
+git branch -M main
+git remote add origin https://github.com/rcastroavendano-sudo/SGP-PROD.git
+git push -u origin main
+
+
+git status                # Verifica los archivos modificados
+git add .			      # Agrega todos los archivos a la cola de subida
+git commit -m "Mensaje"   # Guarda los cambios con un mensaje
+git push                  # Sube los cambios al repositorio remoto
+
+
+Errores comunes
+---------------
+warning: in the working copy of 'vistas/plugins/timepicker/bootstrap-timepicker.js', LF will be replaced by CRLF the next time Git touches it
+SOL: git config --global core.autocrlf true
+

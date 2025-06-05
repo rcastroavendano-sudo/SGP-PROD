@@ -1,0 +1,195 @@
+.text-align-left {
+  text-align: left !important; /* Sobrescribe cualquier estilo previo */
+}
+
+.row {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+/* Centrar todos los títulos de la tabla */
+th {
+  text-align: center;       /* Centrado horizontal */
+  vertical-align: middle;   /* Centrado vertical */
+  display: table-cell;      /* Asegura que el comportamiento sea de celda de tabla */
+}
+
+/* Color verde pastel para títulos principales */
+.green-title {
+  background-color: #DFF0D8; /* Verde pastel */
+  color: #3C763D; /* Verde oscuro para texto */
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #C8E6C9; /* Borde suave */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 5px; /* Espaciado interno */
+}
+
+/* Color naranja pastel para títulos principales */
+.orange-title {
+  background-color: #FFE5CC; /* Naranja pastel */
+  color: #CC6600; /* Naranja oscuro para texto */
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #FFCC99; /* Borde suave */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 5px; /* Espaciado interno */
+}
+
+
+/* Color azul pastel para títulos principales */
+.blue-title {
+  background-color: #D9E8F5; /* Azul pastel */
+  color: #2A7BB3; /* Azul oscuro para texto */
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #B7D4ED; /* Borde suave */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 5px; /* Espaciado interno */
+}
+
+
+/* ESTILOS PARA LOS ITEMS DE LAS QUOTES */ 
+
+.col-line {
+  width: 0px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+  vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+.col-qty {
+  width: 60px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+  vertical-align: middle; /* Centra el contenido verticalmente */
+}
+.col-vm {
+  width: 70px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+  vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+.col-datacenter {
+  width: 80px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+  vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+.col-vcpu {
+  width: 60px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+  vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+.col-vmem {
+  width: 70px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+  vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+.col-vdisk {
+  width: 70px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+  vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+.col-bkp {
+  width: 80px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+  vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+.col-so {
+  width: 80px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+  vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+.col-cals {
+  width: 60px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+  vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+.col-bd {
+  width: 80px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+  vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+.col-sal {
+  width: 60px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+  vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+/*
+.col-bwfwb {
+  width: 60px; 
+  text-align: center;
+  vertical-align: middle;
+}
+
+.col-bwfwl {
+  width: 60px;
+  text-align: center;
+  vertical-align: middle;
+}
+*/
+
+.col-bwinetbp {
+  width: 80px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+  vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+.col-bwinetbs {
+  width: 80px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+  vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+.col-bwinetlp {
+  width: 80px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+  vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+.col-bwinetls {
+  width: 80px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+  vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+
+.col-ip {
+  width: 20px; /* Ajusta el tamaño del checkbox */
+  height: 20px; /* Ajusta el tamaño del checkbox */
+  margin: auto; /* Centra el checkbox */
+}
+
+.col-valor {
+  width: 80px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+}
+
+.col-acciones {
+  width: 10px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el contenido */
+}
+
+/* Estilos para el botón de eliminar fila */
+.btn-eliminar {
+  display: flex;               /* Usar flexbox para centrar el contenido */
+  align-items: center;         /* Centrado vertical */
+  justify-content: center;     /* Centrado horizontal */
+  padding: 0;                  /* Eliminar padding extra */
+  width: 30px;                 /* Ancho del botón */
+  height: 30px;                /* Alto del botón */
+  margin: auto;                /* Centrado dentro de la celda */
+}
+
+

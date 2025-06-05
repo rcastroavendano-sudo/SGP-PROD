@@ -1,0 +1,13 @@
+/* Ajustar el estilo del contenedor de búsqueda en cada tabla y centrarlo */
+.dataTables_filter {
+    display: flex; /* Convierte el elemento en un contenedor flexible */
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    width: 100%; /* Alinea con el ancho de la tabla */
+    margin-bottom: 0; /* Reduce el espacio entre el campo de búsqueda y la tabla */
+    border: 0px solid #007bff; /* Agrega un borde azul de 1px */
+    margin-left: -320px; /* Ajusta este valor según necesites moverlo más a la izquierda */
+}
+
+.dataTables_filter input[type="search"] {
+    width: 500px !important; /* Cambia el ancho según lo necesites */
+}

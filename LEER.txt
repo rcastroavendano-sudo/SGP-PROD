@@ -1,0 +1,74 @@
+------------------------------------------------------------------------------------------
+NOTA 1. MIGRACION
+------------------------------------------------------------------------------------------
+-Si se migra este sistema a otro XAMMP, hay que validar que en el php.ini:
+error_log="C:\xampp\php\logs\php_error_log.log"
+exista!
+
+-Cuando se cree la BD tiersist_sgp, hay que crear y dar acceso al usuario tiersist_tiersist y tiersist
+CREATE USER 'tiersist_tiersist'@'%' IDENTIFIED BY 'Tier1.ltda.-';
+GRANT ALL PRIVILEGES ON tiersist_sgp.* TO 'tiersist_tiersist'@'%';
+FLUSH PRIVILEGES;
+SHOW GRANTS FOR 'tiersist_tiersist'@'%';
+
+CREATE USER 'tiersist'@'localhost' IDENTIFIED BY 'Tier1.ltda.-';
+GRANT ALL PRIVILEGES ON *.* TO 'tiersist'@'localhost';
+FLUSH PRIVILEGES;
+
+
+
+
+------------------------------------------------------------------------------------------
+NOTA 2. CREDENCIALES
+------------------------------------------------------------------------------------------
+Ingreso al sistema:
+
+Usuario		: rcastro
+Contraseña	: Tier1ltda
+
+de la BD:
+dbname=tiersist_sgp
+charset=utf8
+Usuario: tiersist_tiersist  // Usuario
+Password: Tier1.ltda.-       // Contraseña
+------------------------------------------------------------------------------------------
+NOTA 3. PARA AGREGAR UN NUEVO MENU O SUBMENU Y EL FLUJO QUE SIGUE
+------------------------------------------------------------------------------------------
+1) se crean los archivos:
+	vistas/modulos/archivo.php
+	vistas/js/archivo.js
+	ajax/archivo.ajax.php
+	controladores/archivo.controlador.php
+	modelos/archivos.modelo.php
+
+
+2) En el archivo index.php, agregar:
+	require_once "controladores/archivo.controlador.php";
+	require_once "modelos/archivos.modelo.php";
+
+3) En el archivo plantilla.php, agregar al final:
+	<script src="vistas/js/archivo.js"></script>
+	Este archivo plantilla siempre carga todos estos archivos JS en el sitio. Cada pagina llama a la funcion que necesita, por eso, no se pueden repetir los nombres de las funciones en los archivos.
+	Un ejemplo de donde se llama la funcion btnEditarCosto esta definida quotes-cloud-precios-venta.php
+<button class="btn btn-warning btnEditarCosto" idCosto="'.$value["id"].'" data-toggle="modal" data-target="#modalEditarCosto"><i class="fa fa-pencil"></i></button>
+
+	
+4) En el archivo plantilla.php, agregar en if(isset($_GET["ruta"]))
+	$_GET["ruta"] == "archivos" ||	
+	
+
+5) En el archivo menu.php, agregar el link:
+	<li>
+		<a href="archivo">
+			<i class="fa fa-user"></i>
+			<span>Archivo</span>
+		</a>
+	</li>
+	
+------------------------------------------------------------------------------------------
+NOTA 4. FLUJO DE ARCHIVOS PARA CREAR UN NUEVO MENU CON CONSULTAS Y EDICION CON LA BD
+------------------------------------------------------------------------------------------
+1) Se pincha en el nuevo link del menu creado en "NOTA 3." Este link llama al vistas/modulos/archivo.php
+2) Este archivo carga lo que está en vistas/js/archivo.js (En este archivo se define el nombre del ajax/archivo.ajax.php que llamará según el btn que se aprete)
+3) El archivo ajax/archivo.ajax.php llama al controladores/archivo.controlador.php y este llama al modelos/archivos.modelo.php
+ 
