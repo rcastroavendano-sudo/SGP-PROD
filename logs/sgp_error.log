@@ -104,3 +104,58 @@
 [02-Jun-2025 11:54:27 America/Santiago] Usuario:|rcastro| Ingreso al sistema
 [05-Jun-2025 17:03:24 America/Santiago] Usuario:|rcastro| Ingreso al sistema
 [05-Jun-2025 17:03:48 America/Santiago] Usuario:|rcastro| Ingreso al sistema
+[05-Jun-2025 19:45:27 America/Santiago] Usuario:|rcastro| Ingreso al sistema
+[05-Jun-2025 19:59:05 America/Santiago] Error de autenticación (usuario o contraseña incorrectos): SQLSTATE[HY000] [1044] Access denied for user 'tiersist_tiersist'@'%' to database 'tiersist_sgp'
+[05-Jun-2025 19:59:08 America/Santiago] Error de autenticación (usuario o contraseña incorrectos): SQLSTATE[HY000] [1044] Access denied for user 'tiersist_tiersist'@'%' to database 'tiersist_sgp'
+[05-Jun-2025 19:59:11 America/Santiago] Error de autenticación (usuario o contraseña incorrectos): SQLSTATE[HY000] [1044] Access denied for user 'tiersist_tiersist'@'%' to database 'tiersist_sgp'
+[05-Jun-2025 19:59:34 America/Santiago] Error de autenticación (usuario o contraseña incorrectos): SQLSTATE[HY000] [1044] Access denied for user 'tiersist_tiersist'@'%' to database 'tiersist_sgp'
+[05-Jun-2025 19:59:37 America/Santiago] Error de autenticación (usuario o contraseña incorrectos): SQLSTATE[HY000] [1044] Access denied for user 'tiersist_tiersist'@'%' to database 'tiersist_sgp'
+[05-Jun-2025 19:59:58 America/Santiago] Error de autenticación (usuario o contraseña incorrectos): SQLSTATE[HY000] [1044] Access denied for user 'tiersist_tiersist'@'%' to database 'tiersist_sgp'
+[05-Jun-2025 20:00:28 America/Santiago] Error de autenticación (usuario o contraseña incorrectos): SQLSTATE[HY000] [1044] Access denied for user 'tiersist_tiersist'@'%' to database 'tiersist_sgp'
+[05-Jun-2025 20:01:18 America/Santiago] Error de autenticación (usuario o contraseña incorrectos): SQLSTATE[HY000] [1044] Access denied for user 'tiersist_tiersist'@'%' to database 'tiersist_sgp'
+[05-Jun-2025 20:01:24 America/Santiago] Error de autenticación (usuario o contraseña incorrectos): SQLSTATE[HY000] [1044] Access denied for user 'tiersist_tiersist'@'%' to database 'tiersist_sgp'
+[05-Jun-2025 20:01:55 America/Santiago] Error de autenticación (usuario o contraseña incorrectos): SQLSTATE[HY000] [1044] Access denied for user 'tiersist_tiersist'@'%' to database 'tiersist_sgp'
+[05-Jun-2025 20:03:49 America/Santiago] Error de autenticación (usuario o contraseña incorrectos): SQLSTATE[HY000] [1044] Access denied for user 'tiersist_tiersist'@'%' to database 'tiersist_sgp'
+[05-Jun-2025 20:05:06 America/Santiago] Error de autenticación (usuario o contraseña incorrectos): SQLSTATE[HY000] [1044] Access denied for user 'tiersist_tiersist'@'%' to database 'tiersist_sgp'
+[05-Jun-2025 20:05:10 America/Santiago] Error de autenticación (usuario o contraseña incorrectos): SQLSTATE[HY000] [1044] Access denied for user 'tiersist_tiersist'@'%' to database 'tiersist_sgp'
+[05-Jun-2025 20:06:32 America/Santiago] Error de autenticación (usuario o contraseña incorrectos): SQLSTATE[HY000] [1044] Access denied for user 'tiersist_tiersist'@'%' to database 'tiersist_sgp'
+[06-Jun-2025 09:11:56 America/Santiago] Error de autenticación (usuario o contraseña incorrectos): SQLSTATE[HY000] [1045] Access denied for user 'tiersist_tiersist'@'localhost' (using password: YES)
+[06-Jun-2025 09:13:36 America/Santiago] Error de autenticación (usuario o contraseña incorrectos): SQLSTATE[HY000] [1045] Access denied for user 'tiersist_tiersist'@'localhost' (using password: YES)
+[06-Jun-2025 09:13:41 America/Santiago] Error de autenticación (usuario o contraseña incorrectos): SQLSTATE[HY000] [1045] Access denied for user 'tiersist_tiersist'@'localhost' (using password: YES)
+[06-Jun-2025 09:14:19 America/Santiago] Usuario:|rcastro| Ingreso al sistema
+[06-Jun-2025 09:28:26 America/Santiago] Usuario:|rcastro| Ingreso al sistema
+[06-Jun-2025 10:04:32 America/Santiago] PHP Warning:  require_once(controladores/quotes.controlador.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\SGP-PROD\index.php on line 10
+[06-Jun-2025 10:04:32 America/Santiago] PHP Fatal error:  Uncaught Error: Failed opening required 'controladores/quotes.controlador.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\SGP-PROD\index.php:10
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\SGP-PROD\index.php on line 10
+[06-Jun-2025 10:07:01 America/Santiago] Usuario:|rcastro| Ingreso al sistema
+[06-Jun-2025 10:07:38 America/Santiago] Usuario:|rcastro| Ingreso al sistema
+[06-Jun-2025 10:07:50 America/Santiago] Usuario:|fmedina| Ingreso al sistema
+[06-Jun-2025 10:08:26 America/Santiago] Usuario:|rcastro| Ingreso al sistema
+[06-Jun-2025 10:08:41 America/Santiago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'estado' doesn't have a default value in C:\xampp\htdocs\SGP-PROD\modelos\usuarios.modelo.php:64
+Stack trace:
+#0 C:\xampp\htdocs\SGP-PROD\modelos\usuarios.modelo.php(64): PDOStatement->execute()
+#1 C:\xampp\htdocs\SGP-PROD\controladores\usuarios.controlador.php(80): ModeloUsuarios::mdlIngresarUsuario('usuarios', Array)
+#2 C:\xampp\htdocs\SGP-PROD\vistas\modulos\usuarios.php(151): ControladorUsuarios::ctrCrearUsuario()
+#3 C:\xampp\htdocs\SGP-PROD\vistas\plantilla.php(107): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\SGP-PROD\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\SGP-PROD\index.php(17): ControladorPlantilla->ctrPlantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\SGP-PROD\modelos\usuarios.modelo.php on line 64
+[06-Jun-2025 10:08:48 America/Santiago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'estado' doesn't have a default value in C:\xampp\htdocs\SGP-PROD\modelos\usuarios.modelo.php:64
+Stack trace:
+#0 C:\xampp\htdocs\SGP-PROD\modelos\usuarios.modelo.php(64): PDOStatement->execute()
+#1 C:\xampp\htdocs\SGP-PROD\controladores\usuarios.controlador.php(80): ModeloUsuarios::mdlIngresarUsuario('usuarios', Array)
+#2 C:\xampp\htdocs\SGP-PROD\vistas\modulos\usuarios.php(151): ControladorUsuarios::ctrCrearUsuario()
+#3 C:\xampp\htdocs\SGP-PROD\vistas\plantilla.php(107): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\SGP-PROD\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\SGP-PROD\index.php(17): ControladorPlantilla->ctrPlantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\SGP-PROD\modelos\usuarios.modelo.php on line 64
+[06-Jun-2025 10:12:44 America/Santiago] Usuario:|otro| Ingreso al sistema
+[06-Jun-2025 10:13:06 America/Santiago] Usuario:|otro2| Ingreso al sistema
+[06-Jun-2025 10:13:13 America/Santiago] Usuario:|otro| Ingreso al sistema
+[06-Jun-2025 10:33:44 America/Santiago] Usuario:|rcastro| Ingreso al sistema
+[06-Jun-2025 14:21:07 America/Santiago] Usuario:|rcastro| Ingreso al sistema
+[06-Jun-2025 14:37:22 America/Santiago] Error de conexión: SQLSTATE[HY000] [1049] Unknown database 'tiersist_sgp'

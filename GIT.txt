@@ -29,12 +29,10 @@ git push -u origin main
 
 Para sincronizar solo los archivos que fueron modificados del repo llamado SGP-PROD
 -----------------------------------------------------------------------------------
-
-
-git status                # Verifica los archivos modificados
-git add .			      # Agrega todos los archivos a la cola de subida
-git commit -m "Mensaje"   # Guarda los cambios con un mensaje
-git push                  # Sube los cambios al repositorio remoto
+git status                           # Verifica los archivos modificados
+git add .			                 # Agrega todos los archivos a la cola de subida
+git commit -m "cambios 5/Jun/2025"   # Guarda los cambios con un mensaje
+git push origin main                 # Sube los cambios al repositorio remoto
 
 
 Errores comunes

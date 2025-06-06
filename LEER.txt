@@ -15,6 +15,8 @@ CREATE USER 'tiersist'@'localhost' IDENTIFIED BY 'Tier1.ltda.-';
 GRANT ALL PRIVILEGES ON *.* TO 'tiersist'@'localhost';
 FLUSH PRIVILEGES;
 
+-Dejar por defecto que cuando se cree un usuario en el sistema, este activado
+ALTER TABLE usuarios MODIFY estado TINYINT(1) NOT NULL DEFAULT 1;
 
 
 

@@ -48,9 +48,6 @@ if (session_status() === PHP_SESSION_NONE) {
   <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/responsive.bootstrap.min.css">
   <link rel="stylesheet" href="vistas/plugins/datatables_css_adicionales.css"> 
 
-  <!-- Crear Quote -->
-  <link rel="stylesheet" type="text/css" href="vistas/dist/css/quotes-cloud.css">
-
 
   <!--=====================================
   PLUGINS DE JAVASCRIPT
@@ -106,9 +103,6 @@ CUERPO DOCUMENTO
       $_GET["ruta"] == "marcas" ||
       $_GET["ruta"] == "empresas" ||
       $_GET["ruta"] == "usuarios" ||
-      $_GET["ruta"] == "quotes-cloud" ||
-      $_GET["ruta"] == "quotes-cloud-precios-venta" ||
-      $_GET["ruta"] == "quotes-cloud-reportes" ||
       $_GET["ruta"] == "salir"){
         include "modulos/".$_GET["ruta"].".php";
       }
@@ -144,8 +138,6 @@ CUERPO DOCUMENTO
   <script src="vistas/js/marcas.js"></script>
   <script src="vistas/js/empresas.js"></script>
   <script src="vistas/js/proveedores.js"></script>
-  <script src="vistas/js/quotes-cloud.js"></script>
-  <script src="vistas/js/quotes-cloud-precios-venta.js"></script>
 
 </body>
 </html>
