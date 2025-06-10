@@ -37,6 +37,6 @@ git push origin main                 # Sube los cambios al repositorio remoto
 
 Errores comunes
 ---------------
-warning: in the working copy of 'vistas/plugins/timepicker/bootstrap-timepicker.js', LF will be replaced by CRLF the next time Git touches it
-SOL: git config --global core.autocrlf true
+-warning: in the working copy of 'vistas/plugins/timepicker/bootstrap-timepicker.js', LF will be replaced by CRLF the next time Git touches it
+SOLUCION: git config --global core.autocrlf true
 
